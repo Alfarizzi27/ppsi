@@ -10,7 +10,7 @@
             {{ csrf_field() }}
             <div class="form-group row">
                 <label class="col-sm-12 col-md-2 col-form-label">Id Produk</label>
-                <div class="col-sm-12 col-md-10">
+                <div class="col-sm-12 col-md-10"> 
                     <input class="form-control" type="Text" name="id_produk" value="{{$produk->id_produk}}">
                 </div>
             </div>

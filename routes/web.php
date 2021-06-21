@@ -3,7 +3,11 @@
 use App\Http\Controllers\bahanbakuController;
 use App\Http\Controllers\formprodukController;
 use App\Http\Controllers\formbahanbakuController;
+use App\Http\Controllers\formpengadaanController;
+use App\Http\Controllers\formsupplierController;
 use App\Http\Controllers\produkController;
+use App\Http\Controllers\supplierController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -48,10 +52,29 @@ Route::get('/formbahanbaku/delete/{id}',[formbahanbakuController::class,'delete'
 Route::get('/formbahanbaku/edit/{id}',[formbahanbakuController::class,'edit']);
 Route::post('/formbahanbaku/update/{id}',[formbahanbakuController::class,'update']);
 
+///----------------
 Route::get('/riwayat', 'App\Http\Controllers\riwayatpenjualanController@index')->name('riwayat');
-
-Route::get('/pengadaan', 'App\Http\Controllers\pengadaanbahanController@index')->name('pengadaan');
 
 Route::get('/riwayatbahan', function () {
     return view('riwayatbahanbaku');
 });
+
+//-------
+Route::get('/pengadaan', 'App\Http\Controllers\pengadaanbahanController@index')->name('pengadaan');
+
+// Route::get('/formpengadaan', function () {
+//     return view('formpengadaan');
+// });
+Route::get('/formpengadaan',[formpengadaanController::class,'tampil']);
+Route::post('/formpengadaan/add',[formpengadaanController::class,'add']);
+Route::get('/formpengadaan/delete/{id}',[formpengadaanController::class,'delete']);
+Route::get('/formpengadaan/edit/{id}',[formpengadaanController::class,'edit']);
+Route::post('/formpengadaan/update/{id}',[formpengadaanController::class,'update']);
+
+//---------------
+Route::get('/supplier',[supplierController::class,'index']);
+Route::get('/formsupplier',[formsupplierController::class,'tampil']);
+Route::post('/formsupplier/add',[formsupplierController::class,'add']);
+Route::get('/formsupplier/delete/{id}',[formsupplierController::class,'delete']);
+Route::get('/formsupplier/edit/{id}',[formsupplierController::class,'edit']);
+Route::post('/formsupplier/update/{id}',[formsupplierController::class,'update']);

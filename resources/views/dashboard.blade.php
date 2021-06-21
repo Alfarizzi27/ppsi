@@ -65,7 +65,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link active" onclick="window.location='home'">
               <i class="fas fa-home me-2"></i>
               <p>
                 Home
@@ -179,7 +179,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index7.html" class="nav-link">
+                <a href="#" class="nav-link" onclick="window.location='supplier'" >
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Supplier</p>
                 </a>

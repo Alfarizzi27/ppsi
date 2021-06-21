@@ -41,7 +41,6 @@ class formbahanbakuController extends Controller
 
         $data = array(
             'nama_bahan_baku'=>$request->input("nama_bahan_baku"),
-            'stock_bahan_baku'=>$request->input("stock_bahan_baku"),
             'harga_bahan_baku'=>$request->input("harga_bahan_baku"),
             'Deskripsi_bahan_baku'=>$request->input("deskripsi"),
         );

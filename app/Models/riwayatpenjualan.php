@@ -12,5 +12,4 @@ class riwayatpenjualan extends Model
     public $timestamps = false;
     protected $fillable = ['id_penjualan','id_keuangan', 'tanggal_penjualan', 'jumlah_pembelian', 'harga_jual_produk', 'total_harga'];
     protected $primaryKey = 'id_penjualan';
-    public $incrementing = false;
 }

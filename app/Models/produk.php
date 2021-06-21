@@ -12,5 +12,4 @@ class produk extends Model
     public $timestamps = false;
     protected $fillable = ['id_produk','nama_produk', 'stock_produk', 'harga_produk', 'deskripsi_produk'];
     protected $primaryKey = 'id_produk';
-    public $incrementing = false;
 }
