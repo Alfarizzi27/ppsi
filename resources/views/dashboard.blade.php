@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>BATIK ROYYAN</title>
 
 
   <link rel="stylesheet" href="{{asset('assets/fontawesome/css/all.min.css')}}">
@@ -65,7 +65,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item menu-open">
-            <a href="#" class="nav-link active" onclick="window.location='home'">
+            <a href="#" class="nav-link active">
               <i class="fas fa-home me-2"></i>
               <p>
                 Home
@@ -109,13 +109,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index5.html" class="nav-link">
+                <a href="#" class="nav-link" onclick="window.location='penjualanbahanbaku'">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Penjualan Bahan Baku</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index6.html" class="nav-link">
+                <a href="#" class="nav-link" onclick="window.location='penjualanproduk'">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Penjualan Produk</p>
                 </a>
@@ -179,7 +179,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link" onclick="window.location='supplier'" >
+                <a href="./index7.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Supplier</p>
                 </a>
